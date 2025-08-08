@@ -60,7 +60,7 @@ This repository contains the official documentation for Axora, the robot was dev
 
 ### Othman Jaber
 <p align="center">
-  <img src="./t-photos/Othman Jaber.jpg" alt="Othman Jaber" width="50%">
+  <img src="./t-photos/Othman jaber.jpg" alt="Othman Jaber" width="50%">
 </p>
 
 <b>Age:</b> 15
