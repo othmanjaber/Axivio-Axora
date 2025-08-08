@@ -269,7 +269,7 @@ Our power system uses a rechargeable battery pack to provide clean, stable power
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/readme-images/arduino-uno.jpg" alt="Arduino Uno" width="100%">
+      <img src="./other/repository images/arduino uno.jpg" alt="Arduino Uno" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
