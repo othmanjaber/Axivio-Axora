@@ -346,7 +346,7 @@ The VL53L0X Time-of-Flight sensor provides precise distance measurements for obs
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repoitpry images/pixy2.png" alt="Pixy2" width="100%">
+      <img src="./other/repository images/pixy2.png" alt="Pixy2" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
