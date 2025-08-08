@@ -201,7 +201,7 @@ Our steering system uses a simple front-wheel steering mechanism controlled by a
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/readme-images/servo.jpg" alt="Servo Motor" width="100%">
+      <img src="./other/repository-images/servo.jpg" alt="Servo Motor" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
