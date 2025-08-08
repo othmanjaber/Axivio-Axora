@@ -86,7 +86,7 @@ This repository contains the official documentation for Axora, the robot was dev
 
 ### Team photo
 <p align="center">
-  <img src="./t-photos/funny.jpg" alt="Team" width="80%">
+  <img src="./t-photos/funny.jpg" alt="Team" width="50%">
 </p>
 
 ## The Challenge <a class="anchor" id="challenge"></a>
