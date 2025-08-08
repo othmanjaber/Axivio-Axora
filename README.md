@@ -321,7 +321,7 @@ The MPU6050 provides 6-axis motion tracking (3-axis gyroscope + 3-axis accelerom
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repository images/vl53l0x.jpg" alt="VL53L0X" width="100%">
+      <img src="./other/repository images/vl53l0x.jpeg" alt="VL53L0X" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
