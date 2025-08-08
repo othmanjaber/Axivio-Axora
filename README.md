@@ -245,7 +245,7 @@ The robot's power and sensor management system consists of several components wo
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repository images/battery.jpg" alt="Power Supply" width="100%">
+      <img src="./other/repository images/battery.png" alt="Power Supply" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
