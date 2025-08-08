@@ -296,7 +296,7 @@ The Arduino Uno serves as the main controller for our robot, managing all sensor
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/readme-images/mpu6050.jpg" alt="MPU6050" width="100%">
+      <img src="./other/repository images/mpu6050.jpg" alt="MPU6050" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
