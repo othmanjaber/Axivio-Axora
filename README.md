@@ -167,7 +167,7 @@ We selected a standard DC gearmotor for its simplicity and reliability. This mot
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="other/repository images/motor driver.jpg" alt="L298N Motor Driver" width="80%">
+      <img src="other/repository images/motor driver.jpg" alt="L298N Motor Driver" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
