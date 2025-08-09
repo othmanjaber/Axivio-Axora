@@ -1,6 +1,6 @@
 <center><h1> Axivio 2025 </center>
 
-![Banner](./other/repository%20images/lm.png)
+![Banner](./other/repository%20images/Team%20logo.png)
 
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/axivio2025/)
 [![Youtube](https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=Youtube&logoColor=white)](https://www.youtube.com/@Axivio-e1g)
