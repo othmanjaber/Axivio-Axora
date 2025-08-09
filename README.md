@@ -14,7 +14,8 @@ This repository contains the official documentation for Axora, the robot was dev
 <td>
 
 **🚀 Overview**  
-- [The Team](#team)  
+- [The Team](#team)
+- ---
 - [The Challenge](#the-challenge)  
 - [The Robot](#the-robot)  
 - [Performance Video](#robot-video)  
