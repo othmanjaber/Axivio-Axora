@@ -7,7 +7,7 @@
 
 This repository contains the official documentation for Axora, the robot was developed by the Axivio team for the 2025 World Robot Olympiad – Future Engineers competition. Axora was created by two dedicated students.
 
-<h2 align="center">📑 Table of Contents</h2>
+<h2 align="center"> Table of Contents</h2>
 
 <table>
 <tr>
