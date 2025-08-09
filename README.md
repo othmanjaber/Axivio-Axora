@@ -25,7 +25,7 @@ This repository contains the official documentation for Axora, the robot was dev
     - [DC Motor](#dc-motor)  
     - [Motor Driver](#motor-driver)  
 - [Steering](#steering)  
-    - [Servo Motor](#servo-motor)  
+    - [Servo Motor](#servo)  
 - [Chassis](#chassis)  
 
 </td>
