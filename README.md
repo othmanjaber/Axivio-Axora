@@ -220,7 +220,7 @@ We selected a standard 9g servo motor for steering control. This lightweight ser
 - Add servo horn extension for better mechanical advantage
 - Implement servo position feedback
 
-## Chassis <a class="anchor" id="chassis-mechanical"></a>
+## Chassis <a class="anchor" id="chassis"></a>
 
 Our chassis is built using acrylic or plywood material, designed to be lightweight yet sturdy. The chassis houses all electronic components and provides mounting points for motors, sensors, and other hardware.
 
