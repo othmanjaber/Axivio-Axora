@@ -17,7 +17,7 @@ This repository contains the official documentation for Axora, the robot was dev
 - [The Team](#team)  
 - [The Challenge](#the-challenge)  
 - [The Robot](#the-robot)  
-- [Performance Video](#performance-video)  
+- [Performance Video](#robot-video)  
 
 **⚙️ Mobility Management**  
 - [Powertrain](#powertrain)  
@@ -89,7 +89,7 @@ This repository contains the official documentation for Axora, the robot was dev
   <img src="./t-photos/funny.jpg" alt="Team" width="50%">
 </p>
 
-## The Challenge <a class="anchor" id="challenge"></a>
+## The Challenge <a class="anchor" id="the-challenge"></a>
 
 The **[WRO 2025 Future Engineers - Self-Driving Cars](https://wro-association.org/)** challenge invites teams to design, build, and program a robotic vehicle capable of driving autonomously on a racetrack that changes dynamically for each round. The competition includes two main tasks: completing laps while navigating randomized obstacles and successfully performing a precise parallel parking maneuver. Teams must integrate advanced robotics concepts such as computer vision, sensor fusion, and kinematics, focusing on innovation and reliability.
 
@@ -102,7 +102,7 @@ Points are awarded based on performance in the challenge rounds, quality of the 
 
 Learn more about the challenge [here](https://wro-association.org/wp-content/uploads/WRO-2025-Future-Engineers-Self-Driving-Cars-General-Rules.pdf).
 
-## Photos of our robot Axora <a class="anchor" id="robot-image"></a>
+## Photos of our robot Axora <a class="anchor" id="the-robot"></a>
 
 | <img src="./robot-photos/front.png" width="90%" /> | <img src="./robot-photos/back.png" width="85%" /> | 
 | :--: | :--: | 
@@ -114,7 +114,7 @@ Learn more about the challenge [here](https://wro-association.org/wp-content/upl
 
 <br>
 
-## Our video of the robot on [Youtube](https://www.youtube.com/watch?v=aLT0-nPUaAE) <a class="anchor" id="video"></a>
+## Our video of the robot on [Youtube](https://www.youtube.com/watch?v=aLT0-nPUaAE) <a class="anchor" id="robot-video"></a>
 
 <br>
 
@@ -122,9 +122,9 @@ Learn more about the challenge [here](https://wro-association.org/wp-content/upl
 
 The robot's mobility is managed by a combination of components, including the powertrain, steering system, and chassis. These elements work together to ensure the robot's smooth and efficient movement.
 
-## Powertrain <a class="anchor" id="powertrain-mechanical"></a>
+## Powertrain <a class="anchor" id="powertrain"></a>
 
-### Drivetrain <a class="anchor" id="drivetrain-mechanical"></a>
+### Drivetrain <a class="anchor" id="drivetrain"></a>
 
 Our drivetrain uses a direct drive system where the DC motor is connected directly to the rear axle. The rear wheels are mounted on a common axle for synchronized movement, while the front wheels are mounted independently to allow for steering. This simple but effective design minimizes mechanical complexity while providing reliable propulsion.
 
@@ -187,7 +187,7 @@ We use the L298N motor driver to control both the drive motor and servo motor. T
 - Implement better heat dissipation
 - Use more efficient motor driver with lower voltage drop
 
-## Steering <a class="anchor" id="steering-mechanical"></a>
+## Steering <a class="anchor" id="steering"></a>
 
 Our steering system uses a simple front-wheel steering mechanism controlled by a servo motor. The servo is connected to the front wheels through a mechanical linkage that turns both wheels simultaneously.
 
@@ -196,7 +196,7 @@ Our steering system uses a simple front-wheel steering mechanism controlled by a
 - Add steering angle feedback sensor
 - Use stronger servo for more precise control
 
-### Servo Motor <a class="anchor" id="servo-motor"></a>
+### Servo Motor <a class="anchor" id="servo"></a>
 
 <table>
   <tr>
