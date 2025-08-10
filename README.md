@@ -53,6 +53,7 @@ This repository contains the official documentation for Axora, the robot was dev
 
 </td>
 <td>
+    
 **Robot Construction Guide**
 Step 0: Print the 3D parts
 Step 1: Assemble the steering system
