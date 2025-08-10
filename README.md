@@ -47,15 +47,15 @@ This repository contains the official documentation for Axora, the robot was dev
 - [VL53L0X Sensor](#vl53l0x-code)  
 - [Pixy2 Camera](#pixy2-code)  
 
-**Obstacle Management**  
-- [Qualification Round](#qualification-round)  
-- [Final Round](#final-round)  
-- [Additional Code](#additional-code)
 
 
 </td>
 <td>
 
+**Obstacle Management**  
+- [Qualification Round](#qualification-round)  
+- [Final Round](#final-round)  
+- [Additional Code](#additional-code)
 
 
 **Robot Construction Guide**
