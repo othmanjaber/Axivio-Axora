@@ -65,6 +65,7 @@ This repository contains the official documentation for Axora, the robot was dev
 - [Step 4: Attach the wheels](#step4)
 - [Step 5: Final touches](#step5)
 - [Step 6: Upload the code](#step6)
+
   **Cost Report**
 - [3D Printing Costs](#3d-cost)
 - [Summary of Costs]
