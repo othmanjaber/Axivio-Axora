@@ -55,23 +55,20 @@ This repository contains the official documentation for Axora, the robot was dev
 <td>
     
 **Robot Construction Guide**
-Step 0: Print the 3D parts
-Step 1: Assemble the steering system
-Step 2: Assemble the powertrain
-Step 3: Attach the electronics
-Step 4: Attach the wheels
-Step 5: Final touches
-Step 6: Upload the code
-Cost Report
-3D Printing Costs
-Other Parts Tested
-Tools and Equipment
-Summary of Costs
-Randomizer
-Resources
-3D Models
-Images
-    
+- [Step 0: Print the 3D parts](#step0)
+- [Step 1: Assemble the steering system](#step1)
+- [Step 2: Assemble the powertrain](#step2)
+- [Step 3: Attach the electronics](#step3)
+- [Step 4: Attach the wheels](#step4)
+- [Step 5: Final touches](#step5)
+- [Step 6: Upload the code](#step6)
+- [Cost Report](#cost-report)
+- [3D Printing Costs](#3d-cost)
+- [Other Parts Tested]
+- [Tools and Equipment]
+- [Summary of Costs]
+- [3D Models]
+- [Images]
 - [License](#License)
 </td>
 </tr>
