@@ -52,6 +52,27 @@ This repository contains the official documentation for Axora, the robot was dev
 - [Additional Code](#additional-code)  
 
 </td>
+<td>
+**Robot Construction Guide**
+Step 0: Print the 3D parts
+Step 1: Assemble the steering system
+Step 2: Assemble the powertrain
+Step 3: Attach the electronics
+Step 4: Attach the wheels
+Step 5: Final touches
+Step 6: Upload the code
+Cost Report
+3D Printing Costs
+Other Parts Tested
+Tools and Equipment
+Summary of Costs
+Randomizer
+Resources
+3D Models
+Images
+    
+- [License](#License)
+</td>
 </tr>
 </table>
 
@@ -824,3 +845,9 @@ void execute_parking() {
 }
 
 bool
+
+
+```
+
+
+## License
