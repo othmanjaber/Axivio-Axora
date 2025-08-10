@@ -13,13 +13,14 @@ This repository contains the official documentation for Axora, the robot was dev
 <tr>
 <td>
 
-**🚀 Overview**  
+
+** Overview**  
 - [The Team](#team)
 - [The Challenge](#the-challenge)  
 - [The Robot](#the-robot)  
 - [Performance Video](#robot-video)  
 ---
-**⚙️ Mobility Management**  
+**Mobility Management**  
 - [Powertrain](#powertrain)  
     - [Drivetrain](#drivetrain)  
     - [DC Motor](#dc-motor)  
@@ -30,8 +31,8 @@ This repository contains the official documentation for Axora, the robot was dev
 
 </td>
 <td>
-
-**🔋 Power & Sensors**  
+    
+**Power & Sensors**  
 - [Power Supply](#power-supply)  
 - [Arduino Uno](#arduino-uno)  
 - [MPU6050](#mpu6050)  
@@ -39,14 +40,14 @@ This repository contains the official documentation for Axora, the robot was dev
 - [Pixy2](#pixy2)  
 - [Circuit Diagram](#circuit-diagram)
 
-**💻 Code for Components**  
+**Code for Components**  
 - [DC Motor](#dc-motor-code)  
 - [Servo Motor](#servo-motor-code)  
 - [MPU6050 Sensor](#mpu6050-code)  
 - [VL53L0X Sensor](#vl53l0x-code)  
 - [Pixy2 Camera](#pixy2-code)  
 
-**🛠 Obstacle Management**  
+**Obstacle Management**  
 - [Qualification Round](#qualification-round)  
 - [Final Round](#final-round)  
 - [Additional Code](#additional-code)
