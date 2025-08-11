@@ -203,7 +203,7 @@ We selected a standard DC gearmotor for its simplicity and reliability. This mot
 </table>
 
 We use the L298N motor driver to control both the drive motor and servo motor. This dual H-bridge driver allows precise control of motor direction and speed through PWM signals from the Arduino.
-
+<p style="color:red">HELOOOOOOOO</p>
 **Potential Improvements**:
 - Add current sensing for motor feedback
 - Implement better heat dissipation
