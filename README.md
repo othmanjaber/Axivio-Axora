@@ -20,6 +20,7 @@ This repository contains the official documentation for Axora, the robot was dev
 - [The Robot](#the-robot)  
 - [Performance Video](#robot-video)  
 <hr>
+
 **Mobility Management**  
 - [Powertrain](#powertrain)  
     - [Drivetrain](#drivetrain)  
