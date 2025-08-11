@@ -88,6 +88,7 @@ This repository contains the official documentation for Axora, the robot was dev
 <b>Age:</b> 15
 
 <b>School:</b> King Talal Secondary School, Nablus
+<p style="color: blue;">Hello</p>
 
 <b>Description:</b> Hello, I'm Othman from Palestine, and this is my first time competing in WRO. I'm interested in programming, robotics, and astronomy. I like learning new things, solving problems, and playing games.
 
@@ -203,7 +204,6 @@ We selected a standard DC gearmotor for its simplicity and reliability. This mot
 </table>
 
 We use the L298N motor driver to control both the drive motor and servo motor. This dual H-bridge driver allows precise control of motor direction and speed through PWM signals from the Arduino.
-<p style="color:red;">HELOOOOOOOO</p>
 **Potential Improvements**:
 - Add current sensing for motor feedback
 - Implement better heat dissipation
