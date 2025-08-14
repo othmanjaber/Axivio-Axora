@@ -13,7 +13,8 @@ This repository contains the official documentation for Axora, the robot was dev
 <tr>
 <td>
 
-
+ > [!NOTE]
+> ,lds,f
 **Overview**  
 - [The Team](#team)
 - [The Challenge](#the-challenge)  
@@ -105,7 +106,6 @@ This repository contains the official documentation for Axora, the robot was dev
 <b>Description:</b> Hey there! My name is Hamza, and I'm passionate about robotics and engineering. I enjoy working with electronics and programming, and I'm always excited to tackle new challenges. This WRO competition gives me the perfect opportunity to combine my interests in technology and problem-solving.
 
 ---
- > [!NOTE] hi
 ### Team photo
 <p align="center">
   <img src="./t-photos/funny.jpg" alt="Team" width="50%">
