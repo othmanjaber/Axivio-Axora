@@ -9,12 +9,12 @@ This repository contains the official documentation for Axora, the robot was dev
 
 <h2 align="center"> Table of Contents</h2>
 
+ > [!NOTE]
+> this is going to be sooooo good
 <table align="center">
 <tr>
 <td>
 
- > [!NOTE]
-> ,lds,f
 **Overview**  
 - [The Team](#team)
 - [The Challenge](#the-challenge)  
