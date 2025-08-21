@@ -106,11 +106,12 @@ This repository contains the official documentation for Axora, the robot was dev
 <b>Description:</b> Hey there! My name is Hamza, and I'm passionate about robotics and engineering. I enjoy working with electronics and programming, and I'm always excited to tackle new challenges. This WRO competition gives me the perfect opportunity to combine my interests in technology and problem-solving.
 
 ---
-### coach
+### Hamed zafer
 <p align="center">
   <img src="./t-photos/Hamed zafer.jpg" alt="coach hamed" width="50%">
 </p>
-
+Role : Coach
+<b>Description:</b> 
 ---
 ### Team photo
 <p align="center">
