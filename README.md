@@ -108,7 +108,7 @@ This repository contains the official documentation for Axora, the robot was dev
 ---
 ### Hamed zafer
 <p align="center">
-  <img src="./t-photos/Hamed zafer.jpg" alt="coach hamed" width="50%">
+  <img src="./t-photos/Hamed zafer.jpg" alt="coach hamed" width="80%">
 </p>
 Role : Coach
 <b>Description:</b> 
