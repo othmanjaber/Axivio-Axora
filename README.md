@@ -89,6 +89,7 @@ This repository contains the official documentation for Axora, the robot was dev
 <b>Age:</b> 15
 
 <b>School:</b> King Talal Secondary School, Nablus
+
 <b>Gmail:</b> othmanjaber78@gmail.com
 
 <b>Description:</b> Hello, I'm Othman from Palestine, and this is my first time competing in WRO. I'm interested in programming, robotics, and astronomy. I like learning new things, solving problems, and playing games.
