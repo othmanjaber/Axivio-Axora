@@ -113,7 +113,7 @@ This repository contains the official documentation for Axora, the robot was dev
   <img src="./t-photos/Hamed zafer.jpg" alt="coach hamed" width="80%">
 </p>
 Role : Coach
-<b>email: Hamed7710@gmail.com</b>
+<p><b>email: Hamed7710@gmail.com</b></p>
 
 <b>Description:</b> 
 ---
