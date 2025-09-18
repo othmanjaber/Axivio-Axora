@@ -1,129 +1,149 @@
-<center><h1> Axivio 2025 </center>
+# Axivio 2025 - Future Engineers Championship
+
+<div align="center">
 
 ![Banner](./other/repository%20images/Team%20logo.png)
 
+[![WRO 2025](https://img.shields.io/badge/WRO-2025%20Future%20Engineers-blue?style=for-the-badge&logo=robot&logoColor=white)](https://wro-association.org/)
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/axivio2025/)
-[![Youtube](https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=Youtube&logoColor=white)](https://www.youtube.com/@Axivio-e1g)
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/@Axivio-e1g)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-This repository contains the official documentation for Axora, the robot was developed by the Axivio team for the 2025 World Robot Olympiad – Future Engineers competition. Axora was created by two dedicated students.
+**Official documentation for Axora - Our autonomous racing robot**
 
-<h2 align="center"> Table of Contents</h2>
+*Built by two Palestinian students for WRO 2025*
 
- > [!NOTE]
-> this is going to be sooooo good
-<table align="center">
+[Watch Demo](#performance-video) • [Documentation](#table-of-contents) • [Build Guide](#robot-construction-guide) • [Source Code](#source-code)
+
+</div>
+
+---
+
+## Table of Contents
+* [The Team](#team)
+* [The Challenge](#challenge)
+* [The Robot](#robot-image)
+* [Performance Video](#video)
+* [Mobility Management](#mobility-management)
+  * [Powertrain](#powertrain-mechanical)
+    * [Drivetrain](#drivetrain-mechanical)
+    * [Motor](#motor-mechanical)
+    * [Motor Driver](#motor-driver-mechanical)
+  * [Steering](#steering-mechanical)
+    * [Servo Motor](#servo-motor)
+  * [Chassis](#chassis-mechanical)
+* [Power and Sense Management](#power-and-sense-management)
+  * [Power Supply](#power-supply)
+  * [Arduino Uno](#arduino-uno)
+  * [MPU6050](#mpu6050)
+  * [VL53L0X](#vl53l0x)
+  * [Pixy2](#pixy2)
+  * [Circuit Diagram](#circuit-diagram)
+* [Code for each component](#code-for-each-component)
+  * [Drive Motor](#drive-motor-code)
+  * [Servo Motor](#servo-motor-code)
+  * [Camera](#camera-code)
+  * [IMU](#gyro-sensor-code)
+* [Obstacle Management](#obstacle-management)
+  * [Qualification Round](#quali-management)
+  * [Final Round](#final-management)
+  * [Additional code](#additional-code)
+* [Robot Construction Guide](#robot-construction-guide)
+  * [Step 0: Print the 3D parts](#3d-printing)
+  * [Step 1: Assemble the steering system](#steering-system-assembly)
+  * [Step 2: Assemble the powertrain](#powertrain-assembly)
+  * [Step 3: Attach the electronics](#electronics-attachment)
+  * [Step 4: Attach the wheels](#wheel-attachment)
+  * [Step 5: Final touches](#final-touches)
+  * [Step 6: Upload the code](#code-upload)
+* [Cost Report](#cost-report)
+  * [3D Printing Costs](#3d-printing-costs)
+  * [Summary of Costs](#summary-of-costs)
+* [Resources](#resources)
+  * [3D Models](#3d-models-resources)
+  * [Images](#images-resources)
+* [License](#copyright)
+
+---
+
+## Quick Start
+
+```bash
+git clone https://github.com/your-username/axivio-2025.git
+cd axivio-2025
+# Upload code to Arduino Uno
+# Follow build guide below
+```
+
+## Key Features
+
+<div align="center">
+
+| **Autonomous Navigation** | **Advanced Sensors** | **Smart Algorithms** |
+|:---:|:---:|:---:|
+| Complete lap navigation | Computer vision with Pixy2 | Real-time obstacle avoidance |
+| Precision steering control | Distance sensing (VL53L0X) | Gyroscopic stabilization |
+| Dynamic path planning | Motion tracking (MPU6050) | PID control systems |
+
+</div>
+
+## The Team <a class="anchor" id="team"></a>
+
+<div align="center">
+
+### Representing Palestine
+
+</div>
+
+<table>
 <tr>
-<td>
+<td align="center" width="50%">
 
-**Overview**  
-- [The Team](#team)
-- [The Challenge](#the-challenge)  
-- [The Robot](#the-robot)  
-- [Performance Video](#robot-video)  
+### Othman Jaber
+<img src="./t-photos/Othman%20jaber.jpg" width="200" style="border-radius: 50%"/>
 
-**Mobility Management**  
-- [Powertrain](#powertrain)  
-    - [Drivetrain](#drivetrain)  
-    - [DC Motor](#dc-motor)  
-    - [Motor Driver](#motor-driver)  
-- [Steering](#steering)  
-    - [Servo Motor](#servo)  
-- [Chassis](#chassis)  
+**Age:** 15 • **School:** King Talal Secondary School, Nablus
+
+Hello, I'm Othman from Palestine, and this is my first time competing in WRO. I'm interested in programming, robotics, and astronomy. I like learning new things, solving problems, and playing games.
+
+📧 othmanjaber78@gmail.com
 
 </td>
-<td>
-    
-**Power & Sensors**  
-- [Power Supply](#power-supply)  
-- [Arduino Uno](#arduino-uno)  
-- [MPU6050](#mpu6050)  
-- [VL53L0X](#vl53l0x)  
-- [Pixy2](#pixy2)  
-- [Circuit Diagram](#circuit-diagram)
+<td align="center" width="50%">
 
-**Code for Components**  
-- [DC Motor](#dc-motor-code)  
-- [Servo Motor](#servo-motor-code)  
-- [MPU6050 Sensor](#mpu6050-code)  
-- [VL53L0X Sensor](#vl53l0x-code)  
-- [Pixy2 Camera](#pixy2-code)  
+### Hamza Darawsheh
+<img src="./t-photos/Hamza%20Darawsheh.jpg" width="200" style="border-radius: 50%"/>
 
-**Obstacle Management**  
-- [Qualification Round](#qualification-round)  
-- [Final Round](#final-round)  
-- [Additional Code](#additional-code)
+**Age:** 15 • **School:** The Islamiah Secondary School, Nablus
 
+Hey there! My name is Hamza, and I'm passionate about robotics and engineering. I enjoy working with electronics and programming, and I'm always excited to tackle new challenges. This WRO competition gives me the perfect opportunity to combine my interests in technology and problem-solving.
 
 </td>
-<td>
+</tr>
+<tr>
+<td align="center" colspan="2">
 
+### Hamed Zafer
+<img src="./t-photos/Hamed%20zafer.jpg" width="200" style="border-radius: 50%"/>
 
+**Role:** Coach
 
-**Robot Construction Guide**
-- [Step 0: Print the 3D parts](#step0)
-- [Step 1: Assemble the steering system](#step1)
-- [Step 2: Assemble the powertrain](#step2)
-- [Step 3: Attach the electronics](#step3)
-- [Step 4: Attach the wheels](#step4)
-- [Step 5: Final touches](#step5)
-- [Step 6: Upload the code](#step6)
+📧 Hamed7710@gmail.com
 
-     **Cost Report**
-- [3D Printing Costs](#3d-cost)
-- [Summary of Costs]
-- [3D Models]
-- [Images]
-- [License](#License)
 </td>
 </tr>
 </table>
 
----
-## The Team <a class="anchor" id="team"></a>
+<div align="center">
 
-### Othman Jaber
-<p align="center">
-  <img src="./t-photos/Othman jaber.jpg" alt="Othman Jaber" width="50%">
-</p>
+### Team Photo
+<img src="./t-photos/funny.jpg" width="400"/>
 
-<b>Age:</b> 15
-
-<b>School:</b> King Talal Secondary School, Nablus
-
-<b>email: othmanjaber78@gmail.com</b>
-
-<b>Description:</b> Hello, I'm Othman from Palestine, and this is my first time competing in WRO. I'm interested in programming, robotics, and astronomy. I like learning new things, solving problems, and playing games.
+</div>
 
 ---
 
-### Hamza Darawsheh
-<p align="center">
-  <img src="./t-photos/Hamza Darawsheh.jpg" alt="Hamza Darawsheh" width="40%">
-</p>
-
-<b>Age:</b> 15
-
-<b>School:</b> The Islamiah Secondary School, Nablus
-
-<b>Description:</b> Hey there! My name is Hamza, and I'm passionate about robotics and engineering. I enjoy working with electronics and programming, and I'm always excited to tackle new challenges. This WRO competition gives me the perfect opportunity to combine my interests in technology and problem-solving.
-
----
-### Hamed zafer
-<p align="center">
-  <img src="./t-photos/Hamed zafer.jpg" alt="coach hamed" width="80%">
-</p>
-Role : Coach.
-
-<b>email: Hamed7710@gmail.com</b>
-
-<b>Description:</b> 
----
-### Team photo
-<p align="center">
-  <img src="./t-photos/funny.jpg" alt="Team" width="50%">
-</p>
-
-## The Challenge <a class="anchor" id="the-challenge"></a>
+## The Challenge <a class="anchor" id="challenge"></a>
 
 The **[WRO 2025 Future Engineers - Self-Driving Cars](https://wro-association.org/)** challenge invites teams to design, build, and program a robotic vehicle capable of driving autonomously on a racetrack that changes dynamically for each round. The competition includes two main tasks: completing laps while navigating randomized obstacles and successfully performing a precise parallel parking maneuver. Teams must integrate advanced robotics concepts such as computer vision, sensor fusion, and kinematics, focusing on innovation and reliability.
 
@@ -136,46 +156,54 @@ Points are awarded based on performance in the challenge rounds, quality of the 
 
 Learn more about the challenge [here](https://wro-association.org/wp-content/uploads/WRO-2025-Future-Engineers-Self-Driving-Cars-General-Rules.pdf).
 
-## Photos of our robot Axora <a class="anchor" id="the-robot"></a>
+## Axora - Our Robot <a class="anchor" id="robot-image"></a>
 
-| <img src="./robot-photos/front.png" width="90%" /> | <img src="./robot-photos/back.png" width="85%" /> | 
-| :--: | :--: | 
-| *Front* | *Back* |
-| <img src="./robot-photos/left.png" width="90%" /> | <img src="./robot-photos/right.png" width="85%" /> | 
-| *Left* | *Right* |
-| <img src="./robot-photos/top.png" width="90%" /> | <img src="./robot-photos/bottom.png" width="85%" /> | 
-| *Top* | *Bottom* |
+<table>
+<tr>
+<td align="center"><img src="./robot-photos/front.png" width="250"/><br/><b>Front</b></td>
+<td align="center"><img src="./robot-photos/back.png" width="250"/><br/><b>Back</b></td>
+<td align="center"><img src="./robot-photos/left.png" width="250"/><br/><b>Left</b></td>
+</tr>
+<tr>
+<td align="center"><img src="./robot-photos/right.png" width="250"/><br/><b>Right</b></td>
+<td align="center"><img src="./robot-photos/top.png" width="250"/><br/><b>Top</b></td>
+<td align="center"><img src="./robot-photos/bottom.png" width="250"/><br/><b>Bottom</b></td>
+</tr>
+</table>
 
-<br>
+## Performance Video <a class="anchor" id="video"></a>
 
-## Our video of the robot on [Youtube](https://www.youtube.com/watch?v=aLT0-nPUaAE) <a class="anchor" id="robot-video"></a>
+<div align="center">
 
-<br>
+[![Axora in Action](https://img.youtube.com/vi/aLT0-nPUaAE/maxresdefault.jpg)](https://www.youtube.com/watch?v=aLT0-nPUaAE)
+
+**Watch Axora in action**
+
+</div>
+
+---
 
 # Mobility Management <a class="anchor" id="mobility-management"></a>
 
 The robot's mobility is managed by a combination of components, including the powertrain, steering system, and chassis. These elements work together to ensure the robot's smooth and efficient movement.
 
-## Powertrain <a class="anchor" id="powertrain"></a>
+## Powertrain <a class="anchor" id="powertrain-mechanical"></a>
 
-### Drivetrain <a class="anchor" id="drivetrain"></a>
+### Drivetrain <a class="anchor" id="drivetrain-mechanical"></a>
 
 Our drivetrain uses a direct drive system where the DC motor is connected directly to the rear axle. The rear wheels are mounted on a common axle for synchronized movement, while the front wheels are mounted independently to allow for steering. This simple but effective design minimizes mechanical complexity while providing reliable propulsion.
-
-<br>
 
 **Potential Improvements**:
 - Add a differential system for smoother turning
 - Implement encoder feedback for precise distance measurement
 - Consider gear reduction for better torque control
 
----
-### DC Motor <a class="anchor" id="dc-motor"></a>
+### Motor <a class="anchor" id="motor-mechanical"></a>
 
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repository images/dc motor.jpg" alt="DC Motor" width="100%">
+      <img src="./other/repository%20images/dc%20motor.jpg" alt="DC Motor" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
@@ -195,13 +223,12 @@ We selected a standard DC gearmotor for its simplicity and reliability. This mot
 - Implement better motor mounting for reduced vibration
 - Consider brushless motor for higher efficiency
 
----
-### Motor Driver <a class="anchor" id="motor-driver"></a>
+### Motor Driver <a class="anchor" id="motor-driver-mechanical"></a>
 
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="other/repository images/motor driver.jpg" alt="L298N Motor Driver" width="100%">
+      <img src="other/repository%20images/motor%20driver.jpg" alt="L298N Motor Driver" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
@@ -215,12 +242,13 @@ We selected a standard DC gearmotor for its simplicity and reliability. This mot
 </table>
 
 We use the L298N motor driver to control both the drive motor and servo motor. This dual H-bridge driver allows precise control of motor direction and speed through PWM signals from the Arduino.
+
 **Potential Improvements**:
 - Add current sensing for motor feedback
 - Implement better heat dissipation
 - Use more efficient motor driver with lower voltage drop
 
-## Steering <a class="anchor" id="steering"></a>
+## Steering <a class="anchor" id="steering-mechanical"></a>
 
 Our steering system uses a simple front-wheel steering mechanism controlled by a servo motor. The servo is connected to the front wheels through a mechanical linkage that turns both wheels simultaneously.
 
@@ -229,12 +257,12 @@ Our steering system uses a simple front-wheel steering mechanism controlled by a
 - Add steering angle feedback sensor
 - Use stronger servo for more precise control
 
-### Servo Motor <a class="anchor" id="servo"></a>
+### Servo Motor <a class="anchor" id="servo-motor"></a>
 
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repository images/servo.jpg" alt="Servo Motor" width="100%">
+      <img src="./other/repository%20images/servo.jpg" alt="Servo Motor" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
@@ -253,9 +281,9 @@ We selected a standard 9g servo motor for steering control. This lightweight ser
 - Add servo horn extension for better mechanical advantage
 - Implement servo position feedback
 
-## Chassis <a class="anchor" id="chassis"></a>
+## Chassis <a class="anchor" id="chassis-mechanical"></a>
 
-Our chassis is built using acrylic or plywood material, designed to be lightweight yet sturdy. The chassis houses all electronic components and provides mounting points for motors, sensors, and other hardware.
+Our chassis is built using 3D printed components, designed to be lightweight yet sturdy. The chassis houses all electronic components and provides mounting points for motors, sensors, and other hardware.
 
 The design prioritizes:
 - Low center of gravity for stability
@@ -278,7 +306,7 @@ The robot's power and sensor management system consists of several components wo
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repository images/battery.png" alt="Power Supply" width="100%">
+      <img src="./other/repository%20images/battery.png" alt="Power Supply" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
@@ -302,7 +330,7 @@ Our power system uses a rechargeable battery pack to provide clean, stable power
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repository images/arduino uno.jpg" alt="Arduino Uno" width="100%">
+      <img src="./other/repository%20images/arduino%20uno.jpg" alt="Arduino Uno" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
@@ -329,7 +357,7 @@ The Arduino Uno serves as the main controller for our robot, managing all sensor
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repository images/mpu6050.jpg" alt="MPU6050" width="100%">
+      <img src="./other/repository%20images/mpu6050.jpg" alt="MPU6050" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
@@ -354,7 +382,7 @@ The MPU6050 provides 6-axis motion tracking (3-axis gyroscope + 3-axis accelerom
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repository images/vl53l0x.jpeg" alt="VL53L0X" width="100%">
+      <img src="./other/repository%20images/vl53l0x.jpeg" alt="VL53L0X" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
@@ -379,7 +407,7 @@ The VL53L0X Time-of-Flight sensor provides precise distance measurements for obs
 <table>
   <tr>
     <td width="50%" style="text-align: left;">
-      <img src="./other/repository images/pixy2.png" alt="Pixy2" width="100%">
+      <img src="./other/repository%20images/pixy2.png" alt="Pixy2" width="100%">
     </td>
     <td width="50%" style="text-align: left; vertical-align: top;">
       <h3>Specifications:</h3>
@@ -406,7 +434,7 @@ The Pixy2 camera provides advanced computer vision capabilities for color detect
 
 # Code for each component <a class="anchor" id="code-for-each-component"></a>
 
-## DC Motor <a class="anchor" id="dc-motor-code"></a>
+## Drive Motor <a class="anchor" id="drive-motor-code"></a>
 
 The DC motor is controlled through the L298N motor driver using PWM signals for speed control and digital pins for direction control.
 
@@ -477,112 +505,7 @@ void steer_right() {
 }
 ```
 
-## MPU6050 Sensor <a class="anchor" id="mpu6050-code"></a>
-
-The MPU6050 is used for orientation tracking and maintaining straight-line movement.
-
-```cpp
-#include <Wire.h>
-#include <MPU6050.h>
-
-MPU6050 mpu;
-float currentAngle = 0;
-float targetAngle = 0;
-unsigned long lastTime = 0;
-
-void mpu_setup() {
-  Wire.begin();
-  mpu.initialize();
-  
-  if (!mpu.testConnection()) {
-    Serial.println("MPU6050 connection failed");
-    return;
-  }
-  
-  // Calibrate gyroscope
-  calibrate_gyro();
-}
-
-void calibrate_gyro() {
-  Serial.println("Calibrating gyroscope...");
-  float gx_offset = 0, gy_offset = 0, gz_offset = 0;
-  
-  for (int i = 0; i < 1000; i++) {
-    int16_t gx, gy, gz;
-    mpu.getRotation(&gx, &gy, &gz);
-    gx_offset += gx;
-    gy_offset += gy;
-    gz_offset += gz;
-    delay(3);
-  }
-  
-  gx_offset /= 1000;
-  gy_offset /= 1000;
-  gz_offset /= 1000;
-  
-  mpu.setXGyroOffset(gx_offset);
-  mpu.setYGyroOffset(gy_offset);
-  mpu.setZGyroOffset(gz_offset);
-  
-  Serial.println("Gyroscope calibrated");
-}
-
-void update_angle() {
-  unsigned long currentTime = millis();
-  float dt = (currentTime - lastTime) / 1000.0;
-  
-  int16_t gz;
-  mpu.getRotation(NULL, NULL, &gz);
-  
-  float gyro_rate = gz / 131.0; // Convert to degrees/sec
-  currentAngle += gyro_rate * dt;
-  
-  lastTime = currentTime;
-}
-
-float get_angle_error() {
-  return targetAngle - currentAngle;
-}
-
-void set_target_angle(float angle) {
-  targetAngle = angle;
-}
-```
-
-## VL53L0X Sensor <a class="anchor" id="vl53l0x-code"></a>
-
-The VL53L0X provides distance measurements for obstacle detection and navigation.
-
-```cpp
-#include <Wire.h>
-#include <VL53L0X.h>
-
-VL53L0X sensor;
-
-void distance_setup() {
-  Wire.begin();
-  sensor.init();
-  sensor.setTimeout(500);
-  
-  // Start continuous back-to-back mode
-  sensor.startContinuous();
-}
-
-uint16_t get_distance() {
-  return sensor.readRangeContinuousMillimeters();
-}
-
-bool is_obstacle_detected(uint16_t threshold_mm) {
-  uint16_t distance = get_distance();
-  return (distance < threshold_mm && distance != 0);
-}
-
-bool is_wall_close(uint16_t threshold_mm) {
-  return is_obstacle_detected(threshold_mm);
-}
-```
-
-## Pixy2 Camera <a class="anchor" id="pixy2-code"></a>
+## Camera <a class="anchor" id="camera-code"></a>
 
 The Pixy2 camera is used for color detection and object tracking.
 
@@ -663,9 +586,81 @@ bool is_green_object_detected() {
 }
 ```
 
+## IMU <a class="anchor" id="gyro-sensor-code"></a>
+
+The MPU6050 is used for orientation tracking and maintaining straight-line movement.
+
+```cpp
+#include <Wire.h>
+#include <MPU6050.h>
+
+MPU6050 mpu;
+float currentAngle = 0;
+float targetAngle = 0;
+unsigned long lastTime = 0;
+
+void mpu_setup() {
+  Wire.begin();
+  mpu.initialize();
+  
+  if (!mpu.testConnection()) {
+    Serial.println("MPU6050 connection failed");
+    return;
+  }
+  
+  // Calibrate gyroscope
+  calibrate_gyro();
+}
+
+void calibrate_gyro() {
+  Serial.println("Calibrating gyroscope...");
+  float gx_offset = 0, gy_offset = 0, gz_offset = 0;
+  
+  for (int i = 0; i < 1000; i++) {
+    int16_t gx, gy, gz;
+    mpu.getRotation(&gx, &gy, &gz);
+    gx_offset += gx;
+    gy_offset += gy;
+    gz_offset += gz;
+    delay(3);
+  }
+  
+  gx_offset /= 1000;
+  gy_offset /= 1000;
+  gz_offset /= 1000;
+  
+  mpu.setXGyroOffset(gx_offset);
+  mpu.setYGyroOffset(gy_offset);
+  mpu.setZGyroOffset(gz_offset);
+  
+  Serial.println("Gyroscope calibrated");
+}
+
+void update_angle() {
+  unsigned long currentTime = millis();
+  float dt = (currentTime - lastTime) / 1000.0;
+  
+  int16_t gz;
+  mpu.getRotation(NULL, NULL, &gz);
+  
+  float gyro_rate = gz / 131.0; // Convert to degrees/sec
+  currentAngle += gyro_rate * dt;
+  
+  lastTime = currentTime;
+}
+
+float get_angle_error() {
+  return targetAngle - currentAngle;
+}
+
+void set_target_angle(float angle) {
+  targetAngle = angle;
+}
+```
+
 # Obstacle Management <a class="anchor" id="obstacle-management"></a>
 
-## Qualification Round <a class="anchor" id="qualification-round"></a>
+## Qualification Round <a class="anchor" id="quali-management"></a>
 
 For the qualification round, the robot must complete laps around the track while detecting and responding to colored lines that indicate turning points.
 
@@ -771,7 +766,7 @@ void check_lap_completion() {
 }
 ```
 
-## Final Round <a class="anchor" id="final-round"></a>
+## Final Round <a class="anchor" id="final-management"></a>
 
 The final round includes obstacle avoidance and parking challenges.
 
@@ -830,36 +825,4 @@ void avoid_obstacles() {
   
   move_motor(140);
   
-  // Check if we've completed enough laps to start parking
-  if (lap_count >= 3) {
-    final_state = PARKING_SEARCH;
-  }
-}
-
-void search_for_parking() {
-  // Look for parking spot markers
-  if (is_parking_spot_detected()) {
-    final_state = PARKING_MANEUVER;
-  } else {
-    drive_straight();
-    move_motor(120);
-  }
-}
-
-void execute_parking() {
-  // Simplified parking maneuver
-  // Move forward into parking space
-  move_motor(100);
-  delay(1000);
-  
-  // Stop
-  final_state = FINAL_STOP;
-}
-
-bool
-
-
-```
-
-
-## License
+  // Check if we've complete
