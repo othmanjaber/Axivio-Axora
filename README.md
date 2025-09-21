@@ -1,4 +1,4 @@
-# Axivio 2025 - Future Engineers Championship
+# Axivio 2025 - Future Engineers 
 
 <div align="center">
 
@@ -9,9 +9,9 @@
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/@Axivio-e1g)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-**Official documentation for Axora - Our autonomous racing robot**
+**Official documentation for Axora**
 
-*Built by two Palestinian students for WRO 2025*
+Built by two Palestinian students
 
 [Watch Demo](#performance-video) • [Documentation](#table-of-contents) • [Build Guide](#robot-construction-guide) • [Source Code](#source-code)
 
@@ -91,11 +91,9 @@ cd axivio-2025
 
 <div align="center">
 
-### Representing Palestine
 
 </div>
 
-<table>
 <tr>
 <td align="center" width="50%">
 
@@ -107,6 +105,8 @@ cd axivio-2025
 Hello, I'm Othman from Palestine, and this is my first time competing in WRO. I'm interested in programming, robotics, and astronomy. I like learning new things, solving problems, and playing games.
 
 📧 othmanjaber78@gmail.com
+
+---
 
 </td>
 <td align="center" width="50%">
@@ -120,19 +120,20 @@ Hey there! My name is Hamza, and I'm passionate about robotics and engineering. 
 
 </td>
 </tr>
+---
 <tr>
 <td align="center" colspan="2">
 
 ### Hamed Zafer
-<img src="./t-photos/Hamed%20zafer.jpg" width="200" style="border-radius: 50%"/>
+<img src="./t-photos/Hamed%20zafer.jpg" width="200" style="border-radius: 70%"/>
 
 **Role:** Coach
 
-📧 Hamed7710@gmail.com
-
+ email : <Hamed7710@gmail.com>
+ 
+---
 </td>
 </tr>
-</table>
 
 <div align="center">
 
