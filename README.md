@@ -66,27 +66,6 @@ Built by two Palestinian students
 
 ---
 
-## Quick Start
-
-```bash
-git clone https://github.com/your-username/axivio-2025.git
-cd axivio-2025
-# Upload code to Arduino Uno
-# Follow build guide below
-```
-
-## Key Features
-
-<div align="center">
-
-| **Autonomous Navigation** | **Advanced Sensors** | **Smart Algorithms** |
-|:---:|:---:|:---:|
-| Complete lap navigation | Computer vision with Pixy2 | Real-time obstacle avoidance |
-| Precision steering control | Distance sensing (VL53L0X) | Gyroscopic stabilization |
-| Dynamic path planning | Motion tracking (MPU6050) | PID control systems |
-
-</div>
-
 ## The Team <a class="anchor" id="team"></a>
 
 <div align="center">
@@ -98,7 +77,7 @@ cd axivio-2025
 <td align="center" width="50%">
 
 ### Othman Jaber
-<img src="./t-photos/Othman%20jaber.jpg" width="200" style="border-radius: 50%"/>
+<img src="./t-photos/Othman%20jaber.jpg" width="200" style="border-radius: 70%"/>
 
 **Age:** 15 • **School:** King Talal Secondary School, Nablus
 
@@ -112,7 +91,7 @@ Hello, I'm Othman from Palestine, and this is my first time competing in WRO. I'
 <td align="center" width="50%">
 
 ### Hamza Darawsheh
-<img src="./t-photos/Hamza%20Darawsheh.jpg" width="200" style="border-radius: 50%"/>
+<img src="./t-photos/Hamza%20Darawsheh.jpg" width="200" style="border-radius: 70%"/>
 
 **Age:** 15 • **School:** The Islamiah Secondary School, Nablus
 
@@ -125,7 +104,7 @@ Hey there! My name is Hamza, and I'm passionate about robotics and engineering. 
 <td align="center" colspan="2">
 
 ### Hamed Zafer
-<img src="./t-photos/Hamed%20zafer.jpg" width="200" style="border-radius: 70%"/>
+<img src="./t-photos/Hamed%20zafer.jpg" width="200" style="border-radius: 100%"/>
 
 **Role:** Coach
 
