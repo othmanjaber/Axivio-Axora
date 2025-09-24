@@ -99,7 +99,9 @@ Hey there! My name is Hamza, and I'm passionate about robotics and engineering. 
 
 </td>
 </tr>
+
 ---
+
 <tr>
 <td align="center" colspan="2">
 
