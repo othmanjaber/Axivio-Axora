@@ -11,8 +11,6 @@
 
 **Official documentation for Axora**
 
-Built by two Palestinian students
-
 [Watch Demo](#performance-video) • [Documentation](#table-of-contents) • [Build Guide](#robot-construction-guide) • [Source Code](#source-code)
 
 </div>
@@ -81,9 +79,9 @@ Built by two Palestinian students
 
 **Age:** 15 • **School:** King Talal Secondary School, Nablus
 
-Hello, I'm Othman from Palestine, and this is my first time competing in WRO. I'm interested in programming, robotics, and astronomy. I like learning new things, solving problems, and playing games.
+short message : Hi, I'm Othman from Palestine, and this is my first time competing in WRO. I'm interested in programming, robotics, and astronomy. I like learning new things, solving problems, and playing games.
 
-📧 othmanjaber78@gmail.com
+Gmail : <othmanjaber78@gmail.com>
 
 ---
 
@@ -95,8 +93,9 @@ Hello, I'm Othman from Palestine, and this is my first time competing in WRO. I'
 
 **Age:** 15 • **School:** The Islamiah Secondary School, Nablus
 
-Hey there! My name is Hamza, and I'm passionate about robotics and engineering. I enjoy working with electronics and programming, and I'm always excited to tackle new challenges. This WRO competition gives me the perfect opportunity to combine my interests in technology and problem-solving.
+short message : Hey there! My name is Hamza, and I'm passionate about robotics and engineering. I enjoy working with electronics and programming, and I'm always excited to tackle new challenges. This WRO competition gives me the perfect opportunity to combine my interests in technology and problem-solving.
 
+Gmail : <hamzadarawsheh321@gmail.com>
 </td>
 </tr>
 
@@ -110,7 +109,7 @@ Hey there! My name is Hamza, and I'm passionate about robotics and engineering. 
 
 **Role:** Coach
 
- email : <Hamed7710@gmail.com>
+ Gmail : <Hamed7710@gmail.com>
  
 ---
 </td>
@@ -129,13 +128,6 @@ Hey there! My name is Hamza, and I'm passionate about robotics and engineering. 
 
 The **[WRO 2025 Future Engineers - Self-Driving Cars](https://wro-association.org/)** challenge invites teams to design, build, and program a robotic vehicle capable of driving autonomously on a racetrack that changes dynamically for each round. The competition includes two main tasks: completing laps while navigating randomized obstacles and successfully performing a precise parallel parking maneuver. Teams must integrate advanced robotics concepts such as computer vision, sensor fusion, and kinematics, focusing on innovation and reliability.
 
-This challenge emphasizes all aspects of the engineering process, including:
-- **Mobility Management:** Developing efficient vehicle movement mechanisms.
-- **Obstacle Handling:** Strategizing to detect and navigate traffic signs (red and green markers) within specified rules.
-- **Documentation:** Showcasing engineering progress, design decisions, and open-source collaboration through a public GitHub repository.
-
-Points are awarded based on performance in the challenge rounds, quality of the engineering documentation, and the ability to create an innovative and robust solution. The goal is to inspire STEM learning through real-world robotics applications, teamwork, and creative problem-solving.
-
 Learn more about the challenge [here](https://wro-association.org/wp-content/uploads/WRO-2025-Future-Engineers-Self-Driving-Cars-General-Rules.pdf).
 
 ## Axora - Our Robot <a class="anchor" id="robot-image"></a>
@@ -152,15 +144,6 @@ Learn more about the challenge [here](https://wro-association.org/wp-content/upl
 <td align="center"><img src="./v-photos/bottom.png" width="250"/><br/><b>Bottom</b></td>
 </tr>
 </table>
-
-## Performance Video <a class="anchor" id="video"></a>
-
-<div align="center">
-
-[![Axora in Action](https://img.youtube.com/vi/aLT0-nPUaAE/maxresdefault.jpg)](https://www.youtube.com/watch?v=aLT0-nPUaAE)
-
-**Watch Axora in action**
-
 </div>
 
 ---
