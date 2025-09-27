@@ -395,7 +395,7 @@ The Pixy2 camera provides advanced computer vision capabilities for color detect
 
 ### Circuit Diagram <a class="anchor" id="circuit-diagram"></a>
 
-![Circuit diagram]("./other/repository images/circuit diagram.png")
+<img src = "other/repository images/circuit diagram.png">
 
 # Code for each component <a class="anchor" id="code-for-each-component"></a>
 
