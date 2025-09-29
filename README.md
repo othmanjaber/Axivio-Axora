@@ -21,7 +21,6 @@
 * [The Team](#team)
 * [The Challenge](#challenge)
 * [The Robot](#robot-image)
-* [Performance Video](#video)
 * [Mobility Management](#mobility-management)
   * [Powertrain](#powertrain-mechanical)
     * [Drivetrain](#drivetrain-mechanical)
@@ -522,8 +521,8 @@ void loop(){
 
 **Approximate Total:** **125 NIS**
 
-> [!NOTE]
-> We would like to thank the Nablus Directorate of Education for covering all of the 3D printing costs..
+> [!IMPORTANT]
+> We would like to thank the Nablus Directorate of Education for covering all of the 3D printing costs.
 
 
 
