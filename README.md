@@ -502,11 +502,18 @@ void loop(){
 > These are just test code, there are not exactly used in the open challenge or the obstacle challenge.
 
 
-## Cost report <a class="anchor" id="cost-report"></a>
+# robot construction guide <a class="anchor" id="#robot-construction-guide"></a>
+  ## Step 1: print the 3d parts <a class="anchor" id="#3d-printing"></a>
+   this was done using adventurer4 3d printer
+   <img src="#robot-construction-guide">
+  ## Step2: Assemble the steering system <a class="anchor" id="#steering-system-assembly"></a>
+  this was done by connecting the wheel adapters with the connector and mounting them with the base using screws.
+  
+ 
+# Cost report <a class="anchor" id="cost-report"></a>
 
-# 3d-printing-costs<a class="anchor" id="#3d-printing-costs"></a>
+## 3d-printing-costs<a class="anchor" id="#3d-printing-costs"></a>
 
-## 3D Printing Costs – Future Engineers Team
 
 | Printed Part        | Quantity | Material | Unit Price (NIS) | Total (NIS) |
 |----------------------|---------:|---------|-----------------:|------------:|
