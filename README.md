@@ -1,5 +1,3 @@
-<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/eebd1ca3-e178-4e4c-a3f8-f9a36315595d" /># Axivio 2025 - Future Engineers 
-
 <div align="center">
 
 ![Banner](./other/repository%20images/Team%20logo.png)
