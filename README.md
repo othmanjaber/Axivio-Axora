@@ -188,6 +188,11 @@ We selected a standard DC gearmotor for its simplicity and reliability. This mot
 - Implement better motor mounting for reduced vibration
 - Consider brushless motor for higher efficiency
 
+<img src="other/repository images/axis 3d.png" width=500> <img src="other/repository images/axis 2d.png" height=300>
+
+to connect the dc motor with the wheels, we made this 3d design axle to connect between them.
+
+
 ### Motor Driver <a class="anchor" id="motor-driver-mechanical"></a>
 
 <table>
