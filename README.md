@@ -38,6 +38,7 @@
   * [Drive Motor](#drive-motor-code)
   * [Servo Motor](#servo-motor-code)
   * [IMU](#gyro-sensor-code)
+  * [VL53L0X](#vl53l0x-code)
 * [Robot Construction Guide](#robot-construction-guide)
   * [Step 1: Print the 3D parts](#3d-printing)
   * [Step 2: Assemble the steering system](#steering-system-assembly)
@@ -497,8 +498,9 @@ void loop(){
 }
 ```
 
-##VL53L0X <a class="anchor" id="vl53l0x-code"></a>
-```
+## VL53L0X <a class="anchor" id="vl53l0x-code"></a>
+vl53l0x is used for measuring distances from the robot to the outer wall and inner wall.
+```cpp
 #include <Wire.h>
 #include <VL53L0X.h>
 
@@ -566,7 +568,7 @@ void mesure(int direction){
 void loop() {}
 ```
 we made a backup code in case we switched from vl53l0x to ultrasonic
-```
+```cpp
 #include <NewPing.h>
 
 #define TRIGGER_PIN  7  
