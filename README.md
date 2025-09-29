@@ -500,14 +500,14 @@ void loop(){
 > These are just test code, there are not exactly used in the open challenge or the obstacle challenge.
 
 
-# robot construction guide <a class="anchor" id="#robot-construction-guide"></a>
-  ## Step 1: print the 3d parts <a class="anchor" id="#3d-printing"></a>
+# robot construction guide <a class="anchor" id="robot-construction-guide"></a>
+  ## Step 1: print the 3d parts <a class="anchor" id="3d-printing"></a>
    this was done using adventurer4 3d printer
    <img src="#robot-construction-guide">
-  ## Step2: Assemble the steering system <a class="anchor" id="#steering-system-assembly"></a>
+  ## Step2: Assemble the steering system <a class="anchor" id="steering-system-assembly"></a>
   this was done by connecting the wheel adapters with the connector and mounting them with the base using screws.
   <img src="other/steering.jpeg">
-  ## Step 3: Assemble the power train <a class="anchor" id="#power-train-assembly"></a>
+  ## Step 3: Assemble the power train <a class="anchor" id="power-train-assembly"></a>
   The Arduino is powered by about 7.4 V using two lithium batteries, while the motor driver is powered by three lithium batteries.
   <img src="other/battery holder.jpeg">
   
