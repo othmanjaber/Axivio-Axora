@@ -228,6 +228,7 @@ We use the L298N motor driver to control both the drive motor and servo motor. T
 to mount the motor driver we made this 3d design: 
 
 <img src="other/repository images/motor driver holder.png">
+
 ## Steering <a class="anchor" id="steering-mechanical"></a>
 
 Our steering system uses a simple front-wheel steering mechanism controlled by a servo motor. The servo is connected to the front wheels through a mechanical linkage that turns both wheels simultaneously.
@@ -261,6 +262,11 @@ We selected a standard 9g servo motor for steering control. This lightweight ser
 - Add servo horn extension for better mechanical advantage
 - Implement servo position feedback
 
+to mount the servo, we made this 3d design:
+
+<img src="other/repository images/servo holder.png">
+
+
 ## Chassis <a class="anchor" id="chassis-mechanical"></a>
 
 Our chassis is built using 3D printed components, designed to be lightweight yet sturdy. The chassis houses all electronic components and provides mounting points for motors, sensors, and other hardware.
@@ -270,12 +276,6 @@ The design prioritizes:
 - Easy access to components for maintenance
 - Proper weight distribution
 - Compact form factor
-
-**Potential Improvements**:
-- Use carbon fiber for lighter weight
-- Implement modular design for easy assembly
-- Add vibration dampening materials
-- Design better cable management system
 
 # Power and Sense Management <a class="anchor" id="power-and-sense-management"></a>
 
