@@ -42,19 +42,14 @@
   * [Servo Motor](#servo-motor-code)
   * [Camera](#camera-code)
   * [IMU](#gyro-sensor-code)
-* [Obstacle Management](#obstacle-management)
-  * [Qualification Round](#quali-management)
-  * [Final Round](#final-management)
-  * [Additional code](#additional-code)
 * [Robot Construction Guide](#robot-construction-guide)
-  * [Step 0: Print the 3D parts](#3d-printing)
-  * [Step 1: Assemble the steering system](#steering-system-assembly)
-  * [Step 2: Assemble the powertrain](#powertrain-assembly)
+  * [Step 1: Print the 3D parts](#3d-printing)
+  * [Step 2: Assemble the steering system](#steering-system-assembly)
+  * [Step 3: Assemble the powertrain](#powertrain-assembly)
   * [Step 4: Attach the wheels](#wheel-attachment)
-  * [Step 5: Final touches](#final-touches)
-  * [Step 6: Upload the code](#code-upload)
 * [Cost Report](#cost-report)
   * [3D Printing Costs](#3d-printing-costs)
+  * [components costs](#components-costs)
   * [Summary of Costs](#summary-of-costs)
 * [Resources](#resources)
   * [3D Models](#3d-models-resources)
@@ -509,6 +504,45 @@ void loop(){
   Serial.println(getYaw());
 }
 ```
+
+
+## Cost report <a class="anchor" id="cost-report"></a>
+
+# 3d-printing-costs<a class="anchor" id="#3d-printing-costs"></a>
+
+## 3D Printing Costs – Future Engineers Team
+
+| Printed Part        | Quantity | Material | Unit Price (NIS) | Total (NIS) |
+|----------------------|---------:|---------|-----------------:|------------:|
+| Floor 1 (Base Plate) |    1     | PLA     | 55   | 35   |
+| Floor 2 (Upper Plate)|    1     | PLA     | 40   | 30   |
+| Servo Holder         |    1     | PLA     | 10   | 10   |
+| Motor Driver Holder  |    1     | PLA     | 12   | 12   |
+| Small Face Panel     |    1     | PLA     | 8    | 8    |
+
+**Approximate Total:** **125 NIS**
+
+> [!NOTE]
+> We would like to thank the Nablus Directorate of Education for covering all of the 3D printing costs..
+
+
+
+## Component Costs <a class="anchor" id="#components-costs"></a>
+
+| Component               | Quantity | Unit Price (NIS) | Total (NIS) |
+|--------------------------|---------:|-----------------:|------------:|
+| Arduino Uno R3           |    1     | 95   | 95   |
+| DC Motor with L298N Driver |   1     | 60   | 60   |
+| Lithium Battery 18650    |    4     | 20   | 80   |
+| 4-Cell Battery Holder    |    1     | 25   | 25   |
+| Distance Sensor VL53L0X  |    4     | 50   | 200  |
+| MPU6050 Sensor           |    1     | 25   | 25   |
+| Pixy2 Camera             |    1     | 350  | 350  |
+| Jumper Wires             |    4     | 5   | 20   |
+| Wheels   |    1     | 70   | 70   |
+| Misc. (screws, mounts)   |    –     | 20   | 20   |
+
+**Approximate Total:** **855 NIS**
 
 # License
 ```
