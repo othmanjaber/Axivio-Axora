@@ -225,6 +225,9 @@ We use the L298N motor driver to control both the drive motor and servo motor. T
 - Implement better heat dissipation
 - Use more efficient motor driver with lower voltage drop
 
+to mount the motor driver we made this 3d design: 
+
+<img src="other/repository images/motor driver holder.png">
 ## Steering <a class="anchor" id="steering-mechanical"></a>
 
 Our steering system uses a simple front-wheel steering mechanism controlled by a servo motor. The servo is connected to the front wheels through a mechanical linkage that turns both wheels simultaneously.
