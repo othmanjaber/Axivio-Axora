@@ -503,6 +503,8 @@ void loop(){
   Serial.println(getYaw());
 }
 ```
+> [!NOTE]
+> These are just test code, there are not exactly used in the open challenge or the obstacle challenge.
 
 
 ## Cost report <a class="anchor" id="cost-report"></a>
