@@ -50,7 +50,6 @@
   * [Step 0: Print the 3D parts](#3d-printing)
   * [Step 1: Assemble the steering system](#steering-system-assembly)
   * [Step 2: Assemble the powertrain](#powertrain-assembly)
-  * [Step 3: Attach the electronics](#electronics-attachment)
   * [Step 4: Attach the wheels](#wheel-attachment)
   * [Step 5: Final touches](#final-touches)
   * [Step 6: Upload the code](#code-upload)
@@ -59,7 +58,6 @@
   * [Summary of Costs](#summary-of-costs)
 * [Resources](#resources)
   * [3D Models](#3d-models-resources)
-  * [Images](#images-resources)
 * [License](#License)
 
 ---
