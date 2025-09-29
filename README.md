@@ -516,7 +516,7 @@ void loop(){
  
 # Cost report <a class="anchor" id="cost-report"></a>
 
-## 3d-printing-costs<a class="anchor" id="#3d-printing-costs"></a>
+## 3d-printing-costs<a class="anchor" id="3d-printing-costs"></a>
 
 
 | Printed Part        | Quantity | Material | Unit Price (NIS) | Total (NIS) |
@@ -534,7 +534,7 @@ void loop(){
 
 
 
-## Component Costs <a class="anchor" id="#components-costs"></a>
+## Component Costs <a class="anchor" id="components-costs"></a>
 
 | Component               | Quantity | Unit Price (NIS) | Total (NIS) |
 |--------------------------|---------:|-----------------:|------------:|
