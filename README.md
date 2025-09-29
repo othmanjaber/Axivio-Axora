@@ -503,13 +503,13 @@ void loop(){
 # robot construction guide <a class="anchor" id="robot-construction-guide"></a>
   ## Step 1: print the 3d parts <a class="anchor" id="3d-printing"></a>
    this was done using adventurer4 3d printer
-   <img src="other/3d printer.png">
+   <img src="other/3d printer.png" width=500 height=500>
   ## Step2: Assemble the steering system <a class="anchor" id="steering-system-assembly"></a>
   this was done by connecting the wheel adapters with the connector and mounting them with the base using screws.
-  <img src="other/steering.jpeg">
+  <img src="other/steering.jpeg" width=500 height=500>
   ## Step 3: Assemble the power train <a class="anchor" id="power-train-assembly"></a>
   The Arduino is powered by about 7.4 V using two lithium batteries, while the motor driver is powered by three lithium batteries.
-  <img src="other/battery holder.jpeg">
+  <img src="other/battery holder.jpeg" width=500 height=500>
   
   
   
