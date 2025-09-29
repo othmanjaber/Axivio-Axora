@@ -60,7 +60,7 @@
 * [Resources](#resources)
   * [3D Models](#3d-models-resources)
   * [Images](#images-resources)
-* [License](#copyright)
+* [License](#License)
 
 ---
 
@@ -796,3 +796,5 @@ void avoid_obstacles() {
   move_motor(140);
   
   // Check if we've complete
+```
+# License
