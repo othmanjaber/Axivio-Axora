@@ -628,173 +628,27 @@ void set_target_angle(float angle) {
 }
 ```
 
-# Obstacle Management <a class="anchor" id="obstacle-management"></a>
-
-## Qualification Round <a class="anchor" id="quali-management"></a>
-
-For the qualification round, the robot must complete laps around the track while detecting and responding to colored lines that indicate turning points.
-
-```cpp
-enum RobotState {
-  DRIVING_STRAIGHT,
-  TURNING_LEFT,
-  TURNING_RIGHT,
-  STOPPED
-};
-
-RobotState current_state = DRIVING_STRAIGHT;
-int lap_count = 0;
-int turn_count = 0;
-
-void qualification_loop() {
-  update_angle();
-  detect_objects();
-  
-  switch(current_state) {
-    case DRIVING_STRAIGHT:
-      drive_straight();
-      check_for_turns();
-      break;
-      
-    case TURNING_LEFT:
-      execute_left_turn();
-      break;
-      
-    case TURNING_RIGHT:
-      execute_right_turn();
-      break;
-      
-    case STOPPED:
-      motor_stop();
-      break;
-  }
-}
-
-void drive_straight() {
-  float angle_error = get_angle_error();
-  int steering_adjustment = angle_error * 2; // Simple P controller
-  
-  steer(CENTER_ANGLE - steering_adjustment);
-  move_motor(150); // Move forward at moderate speed
-}
-
-void check_for_turns() {
-  if (is_blue_line_detected()) {
-    initiate_left_turn();
-  } else if (is_orange_line_detected()) {
-    initiate_right_turn();
-  }
-}
-
-void initiate_left_turn() {
-  current_state = TURNING_LEFT;
-  set_target_angle(currentAngle - 90);
-}
-
-void initiate_right_turn() {
-  current_state = TURNING_RIGHT;
-  set_target_angle(currentAngle + 90);
-}
-
-void execute_left_turn() {
-  float angle_error = get_angle_error();
-  
-  if (abs(angle_error) > 5) {
-    steer_left();
-    move_motor(120);
-  } else {
-    steer_center();
-    current_state = DRIVING_STRAIGHT;
-    turn_count++;
-    check_lap_completion();
-  }
-}
-
-void execute_right_turn() {
-  float angle_error = get_angle_error();
-  
-  if (abs(angle_error) > 5) {
-    steer_right();
-    move_motor(120);
-  } else {
-    steer_center();
-    current_state = DRIVING_STRAIGHT;
-    turn_count++;
-    check_lap_completion();
-  }
-}
-
-void check_lap_completion() {
-  if (turn_count >= 4) { // Completed one lap
-    turn_count = 0;
-    lap_count++;
-    
-    if (lap_count >= 3) { // Complete 3 laps
-      current_state = STOPPED;
-    }
-  }
-}
-```
-
-## Final Round <a class="anchor" id="final-management"></a>
-
-The final round includes obstacle avoidance and parking challenges.
-
-```cpp
-enum FinalState {
-  OBSTACLE_AVOIDANCE,
-  PARKING_SEARCH,
-  PARKING_MANEUVER,
-  FINAL_STOP
-};
-
-FinalState final_state = OBSTACLE_AVOIDANCE;
-
-void final_round_loop() {
-  update_angle();
-  detect_objects();
-  
-  switch(final_state) {
-    case OBSTACLE_AVOIDANCE:
-      avoid_obstacles();
-      break;
-      
-    case PARKING_SEARCH:
-      search_for_parking();
-      break;
-      
-    case PARKING_MANEUVER:
-      execute_parking();
-      break;
-      
-    case FINAL_STOP:
-      motor_stop();
-      break;
-  }
-}
-
-void avoid_obstacles() {
-  int object_x = get_largest_object_x();
-  
-  if (object_x != -1) {
-    // Object detected, steer to avoid
-    int center_x = 158; // Pixy2 center x coordinate
-    int steering_error = object_x - center_x;
-    
-    if (is_red_object_detected()) {
-      // Red obstacle - turn right to avoid
-      steer(CENTER_ANGLE + 30);
-    } else if (is_green_object_detected()) {
-      // Green obstacle - turn left to avoid
-      steer(CENTER_ANGLE - 30);
-    }
-  } else {
-    // No obstacles, drive straight
-    drive_straight();
-  }
-  
-  move_motor(140);
-  
-  // Check if we've complete
-```
 # License
+```
+MIT License
+
+Copyright (c) 2025 Axivio
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
