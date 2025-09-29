@@ -496,6 +496,103 @@ void loop(){
   Serial.println(getYaw());
 }
 ```
+
+##VL53L0X <a class="anchor" id="vl53l0x-code"></a>
+```
+#include <Wire.h>
+#include <VL53L0X.h>
+
+VL53L0X sensor1;
+VL53L0X sensor2;
+VL53L0X sensor3;
+VL53L0X sensor4;
+
+#define XSHUT1 2
+#define XSHUT2 3
+#define XSHUT3 4
+#define XSHUT4 5
+
+void setup() {
+  Serial.begin(9600);
+  Wire.begin();
+
+  pinMode(XSHUT1, OUTPUT);
+  pinMode(XSHUT2, OUTPUT);
+  pinMode(XSHUT3, OUTPUT);
+  pinMode(XSHUT4, OUTPUT);
+  
+  digitalWrite(XSHUT1, LOW);
+  digitalWrite(XSHUT2, LOW);
+  digitalWrite(XSHUT3, LOW);
+  digitalWrite(XSHUT4, LOW);
+  delay(10);
+
+  digitalWrite(XSHUT1, HIGH);
+  delay(10);
+  sensor1.init(true);
+  sensor1.setAddress(0x30);
+ 
+  digitalWrite(XSHUT2, HIGH);
+  delay(10);
+  sensor2.init(true);
+  sensor2.setAddress(0x31);
+ 
+  digitalWrite(XSHUT3, HIGH);
+  delay(10);
+  sensor3.init(true);
+  sensor3.setAddress(0x32);
+ 
+  digitalWrite(XSHUT4, HIGH);
+  delay(10);
+  sensor4.init(true);
+  sensor4.setAddress(0x33);
+}
+
+void mesure(int direction){
+  if(direction == 1){
+    return sensor1.readRangeSingleMillimeters();
+  }
+  else if(direction == 2){
+    return sensor2.readRangeSingleMillimeters();
+  }
+  else if(direction == 3){
+    return sensor3.readRangeSingleMillimeters();
+  }
+  else if(direction == 4){
+    return sensor4.readRangeSingleMillimeters();
+  }
+}
+
+void loop() {}
+```
+we made a backup code in case we switched from vl53l0x to ultrasonic
+```
+#include <NewPing.h>
+
+#define TRIGGER_PIN  7  
+#define ECHO_PIN     6   
+#define MAX_DISTANCE 200
+
+NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  delay(500);  
+  unsigned int distance = sonar.ping_cm();  
+
+  if (distance == 0) {
+    Serial.println("Out of range");
+  } else {
+    Serial.print("Distance: ");
+    Serial.print(distance);
+  }
+}
+
+```
+
 > [!NOTE]
 > These are just test code, there are not exactly used in the open challenge or the obstacle challenge.
 
