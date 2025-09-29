@@ -508,6 +508,10 @@ void loop(){
    <img src="#robot-construction-guide">
   ## Step2: Assemble the steering system <a class="anchor" id="#steering-system-assembly"></a>
   this was done by connecting the wheel adapters with the connector and mounting them with the base using screws.
+  <img src="other/steering.jpeg">
+  ## Step 3: Assemble the power train <a class="anchor" id="#power-train-assembly"></a>
+  The Arduino is powered by about 7.4 V using two lithium batteries, while the motor driver is powered by three lithium batteries.
+  
   
  
 # Cost report <a class="anchor" id="cost-report"></a>
