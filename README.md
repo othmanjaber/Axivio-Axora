@@ -1,4 +1,4 @@
-# Axivio 2025 - Future Engineers 
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/eebd1ca3-e178-4e4c-a3f8-f9a36315595d" /># Axivio 2025 - Future Engineers 
 
 <div align="center">
 
@@ -511,6 +511,8 @@ void loop(){
   <img src="other/steering.jpeg">
   ## Step 3: Assemble the power train <a class="anchor" id="#power-train-assembly"></a>
   The Arduino is powered by about 7.4 V using two lithium batteries, while the motor driver is powered by three lithium batteries.
+  <img src="other/battery holder.jpeg">
+  
   
   
  
