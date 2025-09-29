@@ -503,7 +503,7 @@ void loop(){
 # robot construction guide <a class="anchor" id="robot-construction-guide"></a>
   ## Step 1: print the 3d parts <a class="anchor" id="3d-printing"></a>
    this was done using adventurer4 3d printer
-   <img src="#robot-construction-guide">
+   <img src="other/3d printer.png">
   ## Step2: Assemble the steering system <a class="anchor" id="steering-system-assembly"></a>
   this was done by connecting the wheel adapters with the connector and mounting them with the base using screws.
   <img src="other/steering.jpeg">
