@@ -49,9 +49,6 @@
 * [Cost Report](#cost-report)
   * [3D Printing Costs](#3d-printing-costs)
   * [components costs](#components-costs)
-  * [Summary of Costs](#summary-of-costs)
-* [Resources](#resources)
-  * [3D Models](#3d-models-resources)
 * [License](#License)
 
 ---
