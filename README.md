@@ -132,6 +132,9 @@ Learn more about the challenge [here](https://wro-association.org/wp-content/upl
 
 ## Axora - Our Robot <a class="anchor" id="robot-image"></a>
 
+![Building journey](other/building%20journey.gif)
+
+Here are some pictures of our robot from every side:
 <table>
 <tr>
 <td align="center"><img src="./v-photos/front.png" width="250"/><br/><b>Front</b></td>
