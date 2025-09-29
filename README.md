@@ -483,156 +483,30 @@ void steer_right() {
 }
 ```
 
-## Camera <a class="anchor" id="camera-code"></a>
-
-The Pixy2 camera is used for color detection and object tracking.
-
-```cpp
-#include <Pixy2.h>
-
-Pixy2 pixy;
-
-void pixy_setup() {
-  pixy.init();
-  Serial.println("Pixy2 initialized");
-}
-
-void detect_objects() {
-  pixy.ccc.getBlocks();
-  
-  if (pixy.ccc.numBlocks) {
-    Serial.print("Found ");
-    Serial.print(pixy.ccc.numBlocks);
-    Serial.println(" objects");
-    
-    for (int i = 0; i < pixy.ccc.numBlocks; i++) {
-      Serial.print("Object ");
-      Serial.print(i);
-      Serial.print(": signature=");
-      Serial.print(pixy.ccc.blocks[i].m_signature);
-      Serial.print(" x=");
-      Serial.print(pixy.ccc.blocks[i].m_x);
-      Serial.print(" y=");
-      Serial.print(pixy.ccc.blocks[i].m_y);
-      Serial.print(" width=");
-      Serial.print(pixy.ccc.blocks[i].m_width);
-      Serial.print(" height=");
-      Serial.println(pixy.ccc.blocks[i].m_height);
-    }
-  }
-}
-
-int get_largest_object_x() {
-  pixy.ccc.getBlocks();
-  
-  if (pixy.ccc.numBlocks == 0) return -1;
-  
-  int largest_area = 0;
-  int largest_x = -1;
-  
-  for (int i = 0; i < pixy.ccc.numBlocks; i++) {
-    int area = pixy.ccc.blocks[i].m_width * pixy.ccc.blocks[i].m_height;
-    if (area > largest_area) {
-      largest_area = area;
-      largest_x = pixy.ccc.blocks[i].m_x;
-    }
-  }
-  
-  return largest_x;
-}
-
-bool is_red_object_detected() {
-  pixy.ccc.getBlocks();
-  
-  for (int i = 0; i < pixy.ccc.numBlocks; i++) {
-    if (pixy.ccc.blocks[i].m_signature == 1) { // Assuming signature 1 is red
-      return true;
-    }
-  }
-  return false;
-}
-
-bool is_green_object_detected() {
-  pixy.ccc.getBlocks();
-  
-  for (int i = 0; i < pixy.ccc.numBlocks; i++) {
-    if (pixy.ccc.blocks[i].m_signature == 2) { // Assuming signature 2 is green
-      return true;
-    }
-  }
-  return false;
-}
-```
-
 ## IMU <a class="anchor" id="gyro-sensor-code"></a>
 
 The MPU6050 is used for orientation tracking and maintaining straight-line movement.
 
 ```cpp
+#include <MPU6050_tockn.h>
 #include <Wire.h>
-#include <MPU6050.h>
 
-MPU6050 mpu;
-float currentAngle = 0;
-float targetAngle = 0;
-unsigned long lastTime = 0;
+MPU6050 mpu(Wire);
 
-void mpu_setup() {
+void setup(){
+  Serial.begin(9600);
   Wire.begin();
-  mpu.initialize();
-  
-  if (!mpu.testConnection()) {
-    Serial.println("MPU6050 connection failed");
-    return;
-  }
-  
-  // Calibrate gyroscope
-  calibrate_gyro();
+  mpu.begin();
+  mpu.calcGyroOffsets(true);
 }
 
-void calibrate_gyro() {
-  Serial.println("Calibrating gyroscope...");
-  float gx_offset = 0, gy_offset = 0, gz_offset = 0;
-  
-  for (int i = 0; i < 1000; i++) {
-    int16_t gx, gy, gz;
-    mpu.getRotation(&gx, &gy, &gz);
-    gx_offset += gx;
-    gy_offset += gy;
-    gz_offset += gz;
-    delay(3);
-  }
-  
-  gx_offset /= 1000;
-  gy_offset /= 1000;
-  gz_offset /= 1000;
-  
-  mpu.setXGyroOffset(gx_offset);
-  mpu.setYGyroOffset(gy_offset);
-  mpu.setZGyroOffset(gz_offset);
-  
-  Serial.println("Gyroscope calibrated");
+float getYaw(){
+  mpu.update();
+  return mpu.getAngleZ();
 }
 
-void update_angle() {
-  unsigned long currentTime = millis();
-  float dt = (currentTime - lastTime) / 1000.0;
-  
-  int16_t gz;
-  mpu.getRotation(NULL, NULL, &gz);
-  
-  float gyro_rate = gz / 131.0; // Convert to degrees/sec
-  currentAngle += gyro_rate * dt;
-  
-  lastTime = currentTime;
-}
-
-float get_angle_error() {
-  return targetAngle - currentAngle;
-}
-
-void set_target_angle(float angle) {
-  targetAngle = angle;
+void loop(){
+  Serial.println(getYaw());
 }
 ```
 
