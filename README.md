@@ -9,7 +9,7 @@
 
 **Official documentation for Axora**
 
-[Watch Demo](#performance-video) • [Documentation](#table-of-contents) • [Build Guide](#robot-construction-guide) • [Source Code](#source-code)
+[Watch Demo](#performance-video) • [Documentation](#table-of-contents) • [Build Guide](#robot-construction-guide) 
 
 </div>
 
