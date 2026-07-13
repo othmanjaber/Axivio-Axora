@@ -61,6 +61,7 @@
 <td align="center" width="50%">
 
 ### Othman Jaber
+![Building journey](other/building%20journey.gif)
 <img src="./t-photos/Othman%20jaber.jpg" width="200" style="border-radius: 70%"/>
 
 **Age:** 15 • **School:** King Talal Secondary School, Nablus
